@@ -1,0 +1,95 @@
+STEP-BY-STEP: Make the repo on your GitHub account and push the prepared files
+
+1) Create the repo on GitHub (web UI)
+   - Go to https://github.com/new
+   - Repository name: ahmed-first-pro
+   - Description: A simple GitHub workflow demo project (prepared for assignment)
+   - Public (or Private if required)
+   - DO NOT check "Initialize this repository with a README"
+   - Click "Create repository"
+
+2) On your machine, open terminal and run these commands inside the folder that contains the prepared files:
+
+# Replace YOUR_GITHUB_USERNAME with your GitHub username in the command below.
+git init
+git add .
+git commit -m "Initial commit with project files"
+git branch -M main
+git remote add origin https://github.com/YOUR_GITHUB_USERNAME/ahmed-first-pro.git
+git push -u origin main
+
+-------------------------
+BRANCH / FEATURE WORK
+-------------------------
+# Create a feature branch, make some changes, and push
+git checkout -b feature/update-readme
+# edit README.md locally (optional) — you can add a short line, then:
+git add README.md
+git commit -m "Add project description and usage instructions"
+git push -u origin feature/update-readme
+
+-------------------------
+PULL REQUEST (PR) — what to put (green text)
+-------------------------
+# Use the GitHub web UI to open the PR.
+# On GitHub: click "Compare & pull request" for the pushed branch.
+PR Title (exact text to paste):
+Update README with project details
+
+PR Description (exact text to paste):
+Added detailed project description and usage instructions.
+
+# Then click "Create pull request", review, and "Merge pull request", then "Confirm merge".
+# Optionally click "Delete branch".
+
+-------------------------
+ISSUES & LABELS — create two issues with this exact content
+-------------------------
+Issue 1 — Bug
+Title (exact text):
+Bug: Typo in README
+
+Body (exact text):
+There is a small typo in the README file that needs to be fixed.
+
+Labels to add: bug
+Assignee: assign yourself
+
+Issue 2 — Feature
+Title (exact text):
+Feature: Add demo script
+
+Body (exact text):
+Add a simple Python demo script to show how the project works.
+
+Labels to add: enhancement
+Assignee: assign yourself
+
+# How to create: on GitHub, go to Issues -> New issue -> paste title and body -> add Label(s) -> click Assign yourself -> Submit new issue
+
+-------------------------
+PROJECT BOARD — create and populate
+-------------------------
+# On GitHub: go to Projects -> New project -> Board (classic) or Projects (beta) -> create
+Project name: My Project Board
+Columns: To Do | In Progress | Done
+
+# Add cards:
+- Add the two Issues created above as cards. Start them in "To Do". As you work, drag them to "In Progress" and then to "Done".
+
+-------------------------
+FINAL CHECKS before submission
+-------------------------
+- Confirm the main branch has the merged commit from the PR.
+- Confirm you have at least one feature branch pushed (feature/update-readme).
+- Confirm the two Issues exist with correct labels and you are assignee.
+- Confirm the Project Board contains the issues as cards.
+- Confirm README.md and demo.py are present and README has instructions to run demo.py.
+
+-------------------------
+SUBMISSION
+-------------------------
+Submit this repository link:
+https://github.com/YOUR_GITHUB_USERNAME/ahmed-first-pro
+
+(Replace YOUR_GITHUB_USERNAME with your GitHub username before submission.)
